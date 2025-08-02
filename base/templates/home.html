@@ -1,0 +1,811 @@
+<!doctype html>
+<html class="no-js" lang="ko">
+    {% load static %}
+    <head>
+        <title>untitled</title>
+        <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <title>비즈니스닥터</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="author" content="ThemeZaa">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <meta name="description" content="Elevate your online presence with Crafto - a modern, versatile, multipurpose Bootstrap 5 responsive HTML5, SCSS template using highly creative 48+ ready demos.">
+    
+        <meta content="가위달인" name="title">
+        <meta name="keywords" content="컨설팅, 비즈니스, 비즈니스 진단" />
+        <meta name="description" content="최고 수준의 비즈니스 솔루션 제공" />
+        <meta content="비즈니스닥터 웹페이지" property="og:title">
+        <meta content="비즈니스닥터" property="og:site_name">
+        <meta content="최고 수준의 비즈니스 솔루션 제공하기 위해 노력하고 있습니다." property="og:description">
+        <meta content="컨설팅, 비즈니스, 비즈니스 진단, 비즈니스 솔루션" property="og:keyword">
+        <meta content="website" property="og:type">
+        <meta content="" property="og:url">
+        <!-- <meta content="https://xn--o39a84k50skna.kr/static/images/sc1.png" property="og:image">
+        
+        <link href="http://xn--o39a84k50skna.kr"  rel="canoninal"> -->
+        
+        <!-- favicon icon -->
+        <!-- <link rel="shortcut icon" href="{% static 'images/scissorsblack.png' %}">
+
+        <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+        <!-- google fonts preconnect -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- style sheets and font icons  -->
+
+        <!-- <link rel="stylesheet" type="text/css" href="{% static 'css/style2.css' %}"/> -->
+                <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}"/>
+        
+        
+        <!-- <link rel="stylesheet" href="{% static 'css/beauty-salon.css' %}" /> -->
+    </head>
+    <style>
+        body{background: white;}
+		#first section{
+        width: 25%;
+				padding: 2rem 1rem;
+    }
+		#six section {
+			width: 33.33%;
+			padding: 2rem 1rem;
+		}
+		h3 {
+    font-size: 2rem;
+		font-weight: 800;
+		letter-spacing: normal;
+}
+h2 {
+    font-size: 2.5rem;
+		font-weight: 700;
+		letter-spacing: normal;
+}
+p {
+font-size: 1.5rem;
+}
+#formwrapper {
+	padding: 5% 20%;
+}
+#page-wrapper {
+    position: relative;
+    padding-top: 0em;
+}
+input[type="submit"].primary{
+    background-color: #45a6ee;
+    color: #ffffff !important;
+}
+		@media screen and (max-width: 1280px) {
+    #banner video {
+        display: block;
+    }
+}
+	#banner h1 {
+    font-size: 3.5rem;
+		font-weight: 700;
+		letter-spacing: normal;
+}
+#banner input[type="submit"].primary, #banner input[type="reset"].primary, #banner input[type="button"].primary, #banner button.primary, #banner .button.primary {
+    box-shadow: none;
+    background-color: #45a6ee;
+    color: #333333 !important;
+}
+@media screen and (max-width: 736px) {
+    .features > * {
+    width: 100%;
+		
+}
+#banner h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: normal;
+}
+#banner br {
+        display: block;
+    }
+		#first section{
+        width: 100%;
+    }
+		#six section{
+        width: 100%;
+    }
+		#formwrapper {
+	padding: 1% 10%;
+}
+
+}
+#myDIV {
+    height: 100px;
+    width: 100%;
+    overflow: auto;
+    font-size: 2.0rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    display: none;
+    margin-top: 1.5rem;
+}
+#myDIV.agree_active {
+  display: block;
+}
+#footer p {
+    margin: 0;
+}
+#footer {
+    padding: 3em 0 3em 0;
+}
+
+ #rbbtn4 {
+    position: fixed;
+    width: 5rem;
+    right: 5%;
+    /* top: 30%; */
+    top: 35%;
+    z-index: 10000;
+  }
+    .rbbtn {margin-bottom: 1rem;}
+#rbbtn4 {
+    position: fixed;
+    width: 10rem;
+    right: 5%;
+    /* top: 30%; */
+    top: 46%;
+  }
+@media (max-width:500px) {
+  
+    #rbbtn4 {    
+    top: 50%;  
+    right: 0%;
+    width: 8rem;
+  }
+  #rbbtn4 a img {
+    width: 5rem;
+}
+	
+}
+#rbbtn4 img {
+    width: 6rem;
+}
+a {
+    text-decoration: none;
+		border-bottom: none;
+  }  
+  a:link {
+    text-decoration: none;
+  }
+  a:visited {text-decoration: none;color: white;}
+	</style>
+	<body class="is-preload">
+
+
+        {% if form.errors %}
+        <div class="upsideerrorstyling" style="text-align: center;font-size: 2rem;margin: 5rem;">
+        <strong style="color: red;"> 
+            <p>신청이 완료되지 않았습니다.</p>
+            <!-- <p>***필수사항을 모두 입력하세요***</p> -->
+            <p> 상호명, 성함, 전화번호, 이메일란를</p>
+            <p> 다시 한번 체크해주세요!!</p>
+        </strong>
+        </div>			
+        {% endif %}
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<!-- <header id="header">
+						<a href="index.html" class="logo">Formula <span>by Pixelarity</span></a>
+						<nav>
+							<ul>
+								<li><a href="#menu">Menu</a></li>
+							</ul>
+						</nav>
+					</header> -->
+
+				<!-- Menu -->
+					<!-- <nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="generic.html">Generic</a></li>
+							<li><a href="elements.html">Elements</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Sign Up</a></li>
+							<li><a href="#" class="button fit">Log In</a></li>
+						</ul>
+					</nav> -->
+
+				<!-- Banner -->
+                 <div id="rbbtn4">
+<a href="#formwrapper"><img class="rbbtn" src="{% static 'images/write04.png' %}" alt=""></a>
+<!-- <br> -->
+<!-- <a href=""><img class="rbbtn" src="{% static 'images/kakaotalks02.png' %}" alt=""></a> -->
+<br>
+<a href="tel:0262192600"><img class="rbbtn" src="{% static 'images/phone02.png' %}" alt=""></a>
+
+<br>
+
+<a href="#banner"><img class="rbbtn" src="{% static 'images/top.png' %}" alt=""></a>
+</div> 
+					<section id="banner" data-video="images/banner">
+						<div class="inner">
+							<header>
+								<h1>귀사의 성장통 <br> 20년 경력 <span style="color: #45a6ee;">비즈니스 닥터</span>가 <br> 진단하고 처방합니다. </h1>
+								<p>
+									실패의 위험을 없애는 맞춤형 성공전략
+									<br>
+									의사처럼 명확한 처방을 내립니다.
+								</p>
+							</header>
+							<ul class="actions special">
+								<li><a href="#formwrapper" class="button primary large">내 비즈니스 무료 진단 신청하기</a></li>
+							</ul>
+						</div>
+						<!-- <a href="#five" class="more"><p>더 보기</p></a> -->
+						<!-- <video src="https://azadoes2021.github.io/cwfood/video/v01.mp4" muted autoplay loop playsinline></video> -->
+
+						<video src="{% static 'images/d.mp4' %}" muted autoplay loop playsinline></video>
+					</section>
+
+				<!-- Wrapper -->
+					<div id="wrapper">
+
+						<div id="wrapper">
+						
+						<!-- five -->
+							<section id="five" class="main special">
+								<div class="inner">
+									<header>
+										<h2><span style="color: #45a6ee;">비즈니스 닥터</span>란?</h2>
+									</header>
+									<img src="{% static 'images/d5.png' %}" style="border-radius:50%;width: 25rem;" alt="">									
+									<br>
+									<br>
+									<h3>사전적 단어로 기업의 경영 상태를 검토하여 불건전한 점을 발견하면 <br> 그 시정책을 세워 그대로 실시하도록 지도,조언하는 전문인</h3>
+								</div>
+							</section>
+							
+						</div>						
+
+						<!-- first -->
+							<section id="first" class="main special">
+								<div class="inner">
+									<header>
+										<h2>혹시 귀사도 이런 <span style="color: red;">증상</span>을 겪고 있나요?</h2>
+									</header>
+									<div class="features">
+										<section>
+											
+											<span class="icon major"><i class="ri-question-line" style="font-size: 3rem;color: red;"></i></span>
+											
+											<h3>만성 정체</h3>
+											<p>매출이 오르지 않고 <br> 정체되어 있습니다.</p>
+										</section>
+										<section>
+											<span class="icon solid major"><i class="ri-advertisement-fill" style="font-size: 3rem;color: red;"></i></span>
+											<h3>급성 출혈</h3>
+											<p>광고비는 계속 쓰는데 <br> 효과가 없습니다.</p>
+										</section>
+										<section>
+											<span class="icon solid major"><i class="ri-question-fill" style="font-size: 3rem;color: red;"></i></span>
+											<h3>원인 불명</h3>
+											<p>무엇이 문제인지조차 <br> 알 수 없어 답답합니다.</p>
+										</section>
+										<section>
+											<span class="icon major"><i class="ri-file-warning-line" style="font-size: 3rem;color: red;"></i></span>
+											<h3>미래 불안</h3>
+											<p>새로운 시도를 하고 <br> 싶지만 실패가 두렵습니다.</p>
+										</section>
+									</div>
+								</div>
+							</section>
+
+							<!-- One -->
+							<section id="two" class="main">
+								<header style="text-align: center;">
+										<h2>의사처럼 생각하는 <span style="color: #45a6ee;">비즈니스 닥터</span></h2>
+									</header>
+								<div class="inner spotlight alt style2">
+									
+									<div class="content">
+										<header>
+											<h3>1. 증상 청취</h3>
+										</header>
+										<p>경영진과 직원들의 목소리를 직접 듣고 표면적 문제와 근본 원인을 구분합니다.</p>
+									</div>
+									<!--
+										Note: You can replace the image below with a JPEG or PNG. Just make sure it's exactly
+										320x340 or at least the same aspect ratio (16:17).
+									-->
+									<span class="image">
+										<img src="{% static 'images/d1.png' %}" alt="" />
+									</span>
+								</div>
+							</section>
+
+							<section id="two" class="main">
+								<div class="inner spotlight alt style2">
+									<div class="content">
+										<header>
+											<h3>2. 정밀 진단</h3>
+										</header>
+										<p>데이터 분석과 현장 조사를 통해 기업의 건강 상태를 객관적으로 평가합니다.</p>
+									</div>
+									<!--
+										Note: You can replace the image below with a JPEG or PNG. Just make sure it's exactly
+										320x340 or at least the same aspect ratio (16:17).
+									-->
+									<span class="image">
+										<img src="{% static 'images/d2.png' %}" alt="" />
+									</span>
+								</div>
+							</section>
+
+							<section id="two" class="main">
+								<div class="inner spotlight alt style2">
+									<div class="content">
+										<header>
+											<h3>3. 맞춤형 처방</h3>
+										</header>
+										<p>기업의 상황과 목표에 맞는 실행 가능한 해결책을 제시합니다.</p>
+									</div>
+									<!--
+										Note: You can replace the image below with a JPEG or PNG. Just make sure it's exactly
+										320x340 or at least the same aspect ratio (16:17).
+									-->
+									<span class="image">
+										<img src="{% static 'images/d3.png' %}" alt="" />
+									</span>
+								</div>
+							</section>
+
+							<section id="two" class="main">
+								<div class="inner spotlight alt style2">
+									<div class="content">
+										<header>
+											<h3>4. 치료 및 모니터링</h3>
+										</header>
+										<p>해결책 실행을 지원하고 성과를 지속적으로 추적하여 필요시 조정합니다</p>
+									</div>
+									<!--
+										Note: You can replace the image below with a JPEG or PNG. Just make sure it's exactly
+										320x340 or at least the same aspect ratio (16:17).
+									-->
+									<span class="image">
+										<img src="{% static 'images/d4.png' %}" alt="" />
+									</span>
+								</div>
+							</section>
+
+
+							<section style="text-align: center;padding: 20rem 5rem 5rem 5rem;">
+
+								<img style="width: 80rem;" src="{% static 'images/pics000.png' %}" alt="">
+							</section>
+
+							<section style="text-align: center;padding: 0rem 5rem;">
+
+								<img style="width: 80rem;" src="{% static 'images/pics.png' %}" alt="">
+							</section>
+
+							<!-- <div id="wrapper">
+							
+							
+								first
+							<section id="first" class="main special">
+								<div class="inner">
+									<header>
+										<h2><span style="color: #45a6ee;">성공사례</span></h2>	
+									</header>
+									<div class="features">
+										<section>
+											
+											<span class="icon major"><i class="ri-gift-line" style="font-size: 3rem;color: #45a6ee;"></i></span>
+											
+											<h3>2008년 <br> 판촉물 업체</h3>
+											<p>성과: 월 매출 억대 돌파, <br> 사무실 4배 확장, 인력 충원</p>
+										</section>
+										<section>
+											<span class="icon solid major"><i class="ri-customer-service-2-line" style="font-size: 3rem;color: #45a6ee;"></i></span>
+											<h3>2010년 <br> 인터넷 보험</h3>
+											<p>성과: 월 매출 억대 달성, <br> 콜센터 인력 3배 증원, 사옥 확장</p>
+										</section>
+										<section>
+											<span class="icon solid major"><i class="ri-store-2-line" style="font-size: 3rem;color: #45a6ee;"></i></span>
+											<h3>2011년 <br> 프랜차이즈 주점</h3>
+											<p>성과: 월 문의 1건~2건 <br> → 전국 가맹점 100호점 돌파</p>
+										</section>
+										<section>
+											<span class="icon major"><i class="ri-coins-line" style="font-size: 3rem;color: #45a6ee;"></i></span>
+											<h3>2012년 <br> 금융/대출</h3>
+											<p>성과: 직원 수 4명 → 20명 (5배 증가), <br> 사무실 4배 확장</p>
+										</section>										
+										<h2 style="color: red;padding:2.5rem 0">매출 변화 없으면 100% 환불해드립니다.</h2>
+									</div>
+								</div>
+							</section>	
+							</div> -->
+						
+							<!-- <div id="wrapper">
+						
+						five
+							<section id="five" class="main special">
+								<div class="inner">
+									<header>
+										<h2><span style="color: #45a6ee;">성공사례</span></h2>
+									</header>
+									<img src="images/d5.png" style="border-radius:50%;width: 25rem;" alt="">									
+									<br>
+									<br>
+									<h2>여성 의류 쇼핑몰 : 6개월 만에 일 매출 800만 원 → 7,000만 원 신화</h3>
+									<h3><i class="ri-checkbox-fill" style="color: purple;"></i>2008년 | 판촉물 업체 : 월 매출 억대 돌파, 사무실 4배 확장, 인력 충원</h3>
+									<h3><i class="ri-checkbox-fill" style="color: purple;"></i>2010년 | 인터넷 보험 : 월 매출 억대 달성, 콜센터 인력 3배 증원, 사옥 확장</h3>
+									<h3><i class="ri-checkbox-fill" style="color: purple;"></i>2011년 | 프랜차이즈 주점 : 월 문의 1건~2건 → 전국 가맹점 100호점 돌파</h3>
+									<h3><i class="ri-checkbox-fill" style="color: purple;"></i>2012년 | 금융/대출 : 직원 수 4명 → 20명 (5배 증가), 사무실 4배 확장</h3>
+									<h2 style="color: red;">매출 변화 없으면 100% 환불해드립니다.</h2>
+								</div>
+							</section>
+							
+						</div>	 -->
+
+							<!-- Wrapper -->
+					<!-- <div id="wrapper">
+						
+												
+							
+						</div> -->
+
+						<div id="wrapper">					
+
+						<!-- six -->
+							<section id="six" class="main special">
+								<div class="inner">
+									<header>
+										<h2>이제, 비즈니스 닥터의 <span style="color: green;">처방</span> 을 받아 변화를 경험할 때 입니다.</h2>
+									</header>
+									<div class="features">
+										<section>
+											
+											<span class="icon major"><i class="ri-smartphone-line" style="font-size: 3rem;color: green;"></i></span>
+											
+											<h3>1. 온라인/전화 문의</h3>
+											<p>간편하게 서비스를 신청하고 <br> 비즈니스 닥터의 처방을 받으세요</p>
+										</section>
+										<section>
+											<span class="icon solid major"><i class="ri-stethoscope-line" style="font-size: 3rem;color: green;"></i></span>
+											<h3>2. 정밀 진단</h3>
+											<p>기업 상태를 확인하여 제일 먼저 <br> 실행할 부분을 제안 드립니다.</p>
+										</section>
+										<section>
+											<span class="icon solid major"><i class="ri-list-check-3" style="font-size: 3rem;color: green;"></i></span>
+											<h3>3. 실행</h3>
+											<p>진단 결과를 바탕으로 실행하여 <br> 빠르게 결과 데이터를 보고드립니다.</p>
+										</section>
+										
+									</div>
+								</div>
+							</section>
+
+						</div>	
+						<!-- CTA -->
+							<!-- <section id="cta" class="main special">
+								<div class="inner">
+									<p>Sed varius suspendisse dictum leo ipsum amet pellentesque<br />
+									fusce ac hendrerit consectetur tempor lorem ipsum.</p>
+									<ul class="actions stacked special">
+										<li><a href="#" class="button primary large">Get Started</a></li>
+										<li><a href="#" class="button large">Learn More</a></li>
+									</ul>
+								</div>
+							</section> -->
+
+					</div>
+					<div id="formwrapper">
+					<!-- Form -->
+						<h2 style="text-align: center;">더 늦기 전에, 지금 바로 <br> <span style="color: #45a6ee;">비즈니스 건강검진</span>을 받아보세요.</h2>
+						<h3 style="text-align: center;">간단한 정보만 남겨주시면, 제가 직접 연락드려 <br> 1차 무료진단을 도와드립니다.</h3>
+						<h2 style="text-align: center;"><span style="color: red;">매출 변화 없을시 100% 환불해드립니다.</span></h2>
+						<br>
+                        {% load widget_tweaks %}
+						<form method="post" action="#">
+                        {% csrf_token %}
+                        {% if form.errors %}
+                        <br>
+                        
+                        <div class="upsideerrorstyling" style="text-align: center;font-size: 2rem;">
+                            <strong style="color: red;"> 
+                            <p>신청이 완료되지 않았습니다.</p>
+                            <!-- <p>***필수사항을 모두 입력하세요***</p> -->
+                            <p> 상호명, 성함, 전화번호, 이메일란를</p>
+                            <p> 다시 한번 체크해주세요!!</p>
+                            </strong>
+                        </div>			
+                        <br class="">
+                        <br class="">
+                                                    
+                                                    
+                                            
+                        {% endif %}
+
+                                <div class="row gtr-uniform">
+                        {% for field in form %}
+							
+                                {% if field.name == 'dhname' %}  
+								<div class="col-6 col-12-xsmall">
+									<input type="text" name="{{ field.name }}" id="{{ field.id_for_label }}" value="" placeholder="상호명" />
+								</div>
+                                {% elif field.name == 'name' %}
+								<div class="col-6 col-12-xsmall">
+									<input type="text" name="{{ field.name }}" id="{{ field.id_for_label }}" value="" placeholder="성함" />
+								</div>
+                                {% elif field.name == 'number' %}
+								<div class="col-6 col-12-xsmall">
+									<input type="text" name="{{ field.name }}" id="{{ field.id_for_label }}" value="" placeholder="전화번호" />
+								</div>
+                                {% elif field.name == 'address001' %}  
+								<div class="col-6 col-12-xsmall">
+									<input type="text" name="{{ field.name }}" id="{{ field.id_for_label }}" value="" placeholder="이메일 주소" />
+								</div>
+                                {% elif field.name == 'body' %}
+								<div class="col-12">
+									<textarea name="{{ field.name }}" id="{{ field.id_for_label }}" placeholder="문의내용" rows="3"></textarea>
+								</div>
+								<!-- Break -->
+								
+                                {% elif field.name == 'terms_confirmed' %}
+            <!-- <div class="row gtr-uniform"> -->
+            <div class="col-12">
+            <div id="myDIV" onscroll="myFunction()">
+            <div id="content" style="font-size: 1.2rem;">
+              제1조 개인정보 수집에 대한 동의
+
+              <OOO>(‘URL’이하 ‘사이트 비즈니스닥터’) 은(는) 고객은 사이트 회원 가입시 회원 약관, 개인정보 수집 및 이용 내용에 대해 「동의함」 버튼을 클릭할 수 있는 절차를 마련하여, 「동의함」 버튼을 클릭하면 개인정보 수집 및 이용에 대해 동의한 것으로 봅니다.
+              
+              제2조 개인정보의 수집 항목 및 이용 목적
+              
+              "개인정보"는 생존하는 개인에 관한 정보로서 해당 정보에 포함된 성명, 주민등록번호 등의 사항으로 해당 개인을 식별할 수 있는 정보(해당 정보만으로는 특정 개인을 식별할 수 없더라도 다른 정보와 쉽게 결합하여 식별할 수 있는 것을 포함)를 말합니다.
+              
+              사이트가 고객의 개인정보를 수집 이용하는 목적은 다음과 같습니다.
+              
+              일반 회원정보
+              
+              - 수집시기: 가입시
+              - 필수 수집항목: 아이디, 비밀번호, 이메일, 이름 *수정필요*
+              - 선택 수집항목: 프로필 이미지, 생년월일, 전화번호, 주소 *수정필요*
+              - 이용목적: 가입, 서비스 이용시 상담, 공지사항 전달
+              - 보유기간: 회원탈퇴시 즉시 삭제, 구매 회원인 경우 5년간 보관
+              
+              주문 정보(회원, 비회원 포함)
+              
+              - 수집시기: 주문시
+              - 필수 수집항목: 주문자 정보(이름, 주소, 전화번호, 이메일), 수취자 정보(이름, 주소, 전화번호), 결제 승인정보
+              - 선택 수집항목: 배송 메시지
+              - 이용목적: 주문 상품의 결제 및 배송
+              - 보유기간: 5년간 보관
+              
+              제3조 쿠키에 의한 개인정보 수집
+              
+              사이트는 고객에 대한 정보를 저장하고 수시로 찾아내는 '쿠키(cookie)'를 사용합니다. 쿠키는 웹사이트가 고객의 컴퓨터 브라우저(인터넷 익스플로러 등)에 전송하는 소량의 텍스트 파일입니다.
+              
+              ① 쿠키의 사용목적
+              
+              - 개인의 관심 분야에 따라 차별화된 정보를 제공
+              - 접속빈도 또는 방문시간 등을 분석하고 이용자의 취향과 관심분야를 파악하여 타겟(target) 마케팅 및 서비스 개선의 척도로 활용
+              - 쇼핑한 품목들에 대한 정보와 관심있게 둘러본 품목을 추적하여 개인 맞춤 쇼핑서비스 제공
+              
+              ② 쿠키의 운영 및 거부
+              
+              쿠키는 사용자의 컴퓨터 하드디스크에 저장되며, 사용자의 컴퓨터는 식별하지만 사용자를 개인적으로 식별하지는 않습니다.
+              또한 고객은 웹브라우저에 설정을 통해 모든 쿠키를 허용/거부하거나, 쿠키가 저장될 때마다 확인을 거치도록 할 수 있습니다.
+              단, 쿠키의 저장을 거부할 경우에는 로그인이 필요한 일부 서비스는 이용할 수 없습니다.
+              
+              ③ 쿠키 설정 거부 방법
+              
+              가. Internet Explorer의 경우
+              웹 브라우저 상단의 도구 메뉴 > 인터넷 옵션 > 개인정보 탭 > 직접 설정
+              
+              나. Chrome의 경우
+              웹 브라우저 우측 상단의 메뉴 아이콘 선택 > 설정 > 화면 하단의 고급 설정 표시 >개인정보 섹션의 콘텐츠 설정 버튼 > 쿠키 섹션에서 직접 설정
+              
+              제4조 개인정보의 보유 및 이용기간 및 파기
+              
+              ① 고객의 개인정보는 회원탈퇴 등 수집 및 이용목적이 달성되거나 동의철회 요청이 있는 경우 지체없이 파기됩니다.
+              단, 「전자상거래 등에서의 소비자보호에 관한 법률」 등 관련법령의 규정에 의하여 다음과 같이 거래 관련 권리 의무 관계의 확인 등을 이유로 일정기간 보유하여야 할 필요가 있을 경우에는 그 기간동안 보유합니다.
+              
+              가. 「전자상거래 등에서의 소비자보호에 관한 법률」 제6조
+              - 계약 또는 청약 철회 등에 관한 기록 : 5년
+              - 대금결재 및 재화 등의 공급에 관한 기록 : 5년
+              - 소비자의 불만 또는 분쟁처리에 관한 기록 : 3년
+              
+              나. 「통신비밀보호법」 제15조의2
+              - 방문(로그)에 관한 기록: 1년
+              
+              다. 기타 관련 법령 등
+              
+              ② 사이트의 개인정보 파기방법은 다음과 같습니다.
+              
+              가. 파기절차
+              - 회원가입 등을 위해 입력한 정보는 목적이 달성된 후 별도의 DB로 옮겨져(종이의 경우 별도의 서류함) 내부 방침 및 기타 관련 법령에 의한 일정기간 저장된 후 파기됩니다.
+              - 동 개인정보는 법률에 의한 경우가 아니고서는 보유되는 이외의 다른 목적으로 이용되지 않습니다.
+              
+              나. 파기방법
+              - 종이에 출력된 개인정보는 분쇄기로 분쇄하거나 소각을 통하여 파기합니다.
+              - 전자적 파일 형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제합니다.
+              
+              ③ 사이트는 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」 제29조 제2항에 따라 휴면회원(최근 12개월 동안 서비스를 이용하지 아니한 회원)에 대해 회원자격 상실에 대한 안내문을 통지하고, 안내문에서 정한 기한 내에 답변이 없을 경우 회원자격을 상실시킬 수 있습니다.
+              
+              이 경우, 휴면회원의 개인정보는 다른 회원의 개인정보와 분리하여 별도로 저장·관리 되며, 분리 저장된 개인정보는 법정보관기간 경과 후 파기하고 있습니다.
+              파기되지 않은 개인 정보 중 해당 이용자의 요청이 있는 경우 고객 정보는 서비스 이용을 재개하는 시점에 다시 제공됩니다.
+              
+              제5조 제3자에 대한 제공
+              
+              ① 사이트는 고객의 개인정보를 "제1조 개인정보의 수집항목 및 이용목적 "에서 고지한 범위를 넘어 이용하거나 타인 또는 타기업, 기관에 제공하지 않습니다.
+              ② 다음은 예외로 합니다.
+              가. 관계법령에 의하여 수사상의 목적으로 관계기관으로부터의 요구가 있을 경우
+              나. 통계작성, 학술연구나 시장조사 등을 위하여 특정 개인을 식별할 수 없는 형태로 광고주, 협력사나 연구단체 등에 제공하는 경우
+              다. 기타 관계법령에서 정한 절차에 따른 요청이 있는 경우
+              
+              상기사항에 의해 개인정보를 제공하는 경우에도 본래의 수집 및 이용 목적에 반하여 무분별하게 정보가 제공되지 않도록 최대한 노력하겠습니다.
+              
+              제6조 개인정보의 취급 위탁
+              
+              사이트는 보다 나은 서비스 제공, 고객편의 제공 등 원활한 업무 수행을 위하여 아래와 같이 개인정보 취급 업무를 외부 전문업체에 위탁하여 운영하고 있습니다.
+              
+              - 주문 상품의 배송: OO택배 *수정필요*
+              - 전산 시스템 구축 및 유지: 호스팅업체 *수정필요*
+              - 배송 추적 시스템 서비스: *수정필요*
+              - 결제 및 에스크로 서비스: PG사 *수정필요*
+              - 본인확인, 아이핀 서비스: *수정필요*
+              
+              ※ 수탁자에 공유되는 정보는 당해 목적을 달성하기 위하여 필요한 최소한의 정보에 국한됩니다. 또한 고객의 서비스 요청에 따라 해당하는 업체에 선택적으로 개인정보가 제공되고 있습니다.
+              ※ 위탁 업체 리스트는 해당 서비스 변경 및 계약기간에 따라 변경될 수 있으며 변경 시 공지사항을 통해 사전 공지합니다. 단기 이벤트는 참여 시에 개별 공지됩니다.
+              
+              제7조 개인정보의 열람 및 정정
+              
+              ① 고객께서는 언제든지 등록된 귀하의 개인정보를 열람하거나 정정하실 수 있습니다. 개인정보는 『회원정보변경』을 클릭하여 직접 열람하거나 정정할 수 있으며 개인정보보호책임자 또는 담당자 에게 서면이나 전화 또는 이메일(E-mail)로 열람이나 정정을 요청하시면 곧바로 조치하겠습니다.
+              ② 고객께서 개인정보의 오류에 대해 정정을 요청하면, 사이트는 정정을 완료하기 전까지 해당 개인 정보를 이용하거나 제공하지 않습니다.
+              ③ 잘못된 개인정보를 제3자에게 이미 제공했을 때에는 정정 처리결과를 제3자에게 곧바로 통지하여 정정하도록 조치하겠습니다.
+              
+              제8조 개인정보의 수집,이용,제공에 대한 동의철회
+              
+              ① 회원가입 등을 통한 개인정보의 수집, 이용, 제공과 관련해 귀하는 동의하신 내용을 언제든지 철회 하실 수 있습니다. 동의철회는 홈페이지 첫 화면의 『회원정보』에서 "회원탈퇴"를 클릭하면 개인정보의 수집ㆍ이용ㆍ제공에 대한 동의를 바로 철회할 수 있으며, 개인정보보호책임자에게 서면, 전화, 이메일(E-mail) 등으로 연락하시면 사이트는 즉시 회원 탈퇴를 위해 필요한 조치를 취합니다. 동의를 철회하고 개인정보를 파기하는 등의 조치가 있으면 그 사실을 귀하께 지체없이 통지하도록 하겠습니다.
+              ② 사이트는 개인정보의 수집에 대한 동의철회(회원탈퇴)를 개인정보를 수집하는 방법보다 쉽게 할 수 있도록 필요한 조치를 취합니다.
+              
+              제9조 개인정보의 안전성 확보 조치
+              
+              사이트는 개인정보보호법 제29조에 따라 다음과 같이 안전성 확보에 필요한 기술적/관리적 및 물리적 조치를 하고 있습니다.
+              
+              1. 개인정보의 암호화
+              이용자의 개인정보는 비밀번호는 암호화 되어 저장 및 관리되고 있어, 본인만이 알 수 있으며 중요한 데이터는 파일 및 전송 데이터를 암호화 하거나 파일 잠금 기능을 사용하는 등의 별도 보안기능을 사용하고 있습니다.
+              
+              2. 해킹 등에 대비한 기술적 대책
+              사이트는 해킹이나 컴퓨터 바이러스 등에 의한 개인정보 유출 및 훼손을 막기 위하여 보안프로그램을 설치하고 주기적인 갱신·점검을 하며 외부로부터 접근이 통제된 구역에 시스템을 설치하고 기술적/물리적으로 감시 및 차단하고 있습니다.
+              
+              제10조 14세 미만 아동의 개인정보보호
+              
+              사이트는 온라인 환경에서 어린이의 개인정보를 보호하는 것 역시 중요한 일이라고 생각하고 있으며, 사이트는 법정대리인의 동의가 필요한 만 14세 미만 아동의 회원가입은 받고 있지 않습니다. 명의도용이나 시스템 악용 등으로 만 14세 미만의 아동이 사이트에 가입하거나 개인정보를 제공하게 될 경우 법정대리인이 모든 권리를 행사할 수 있습니다.
+              
+              제11조 개인정보보호 책임자
+              
+              사이트의 개인정보 처리에 관한 업무를 총괄해서 책임지고, 개인정보 처리와 관련한 이용자의 불만처리 및 피해구제 등을 위하여 아래와 같이 개인정보 보호책임자를 지정하고 있습니다.
+              
+              ▶ 개인정보 보호책임자
+              - 성명 : *수정필요*
+              - 직책 : *수정필요*
+              - 직급 : *수정필요*
+              - 연락처 : *수정필요*
+              
+              개인정보침해에 대한 신고 또는 상담이 필요하신 경우에는 한국정보보호진흥원(KISA) 개인정보침해신고센터로 문의하시기 바랍니다. 또한, 귀하가 개인정보침해를 통한 금전적, 정신적 피해를 입으신 경우에는 한국정보보호진흥원*KISA) 개인정보분쟁조정위원회에 피해구제를 신청하실 수 있습니다.
+              
+              - KISA 개인정보보호 (http://privacy.kisa.or.kr / (국번 없이) 118)
+              - 경찰청 사이버안전국 (http://cyberbureau.police.go.kr (국번없이) 182)
+              - 대검찰청 사이버수사과 (http://spo.go.kr / 02-3480-3570)
+              - 개인정보 침해신고센터 (한국인터넷 진흥원 운영) ( http://privacy.kisa.or.kr / (국번없이) 118)
+              - 개인정보 분쟁조정위원회 (한국인터넷 진흥원 운영) (http://www.kopico.go.kr / 1833-6972)
+              
+              제12조 개인정보 처리방침 변경
+              
+              이 개인정보처리방침은 시행일(OOOO년 OO월 OO일)로부터 적용되며, 법령 및 방침에 따른 변경내용의 추가, 삭제 및 정정이 있는 경우에는 변경사항의 시행 7일 전부터 공지사항을 통하여 고지할 것입니다.  
+            </div>
+            <br>
+          </div>
+          <div class="col-6 col-12-small" style="text-align: center;">
+            <input type="checkbox" id="{{ field.id_for_label }}" name="{{ field.name }}">
+            <label for="{{ field.id_for_label }}">개인정보 수집 및 이용에 동의합니다.</label>
+            
+          <span id="agree_content" style="text-decoration: underline;cursor: pointer;font-size: 1rem">[약관]</span>
+          </div>
+          </div>
+            {% endif %}  
+            
+        {% endfor %}  
+                                
+                                
+                                
+                                <div class="col-12">
+									<ul class="actions">
+										<li><input type="submit" value="신청하기" class="primary" style="font-size: 1.2rem;" /></li>
+										<!-- <li><input type="reset" value="Reset" /></li> -->
+									</ul>
+								</div>
+							</div>
+						</form>
+					
+				</div>
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<!-- <ul class="icons">
+								<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands alt fa-youtube"><span class="label">YouTube</span></a></li>
+								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+							</ul> -->
+                            <p>상호: 노리스크</p>
+                            <p>사업자 번호: 117-14-99278</p>
+                            <p>이메일 : dartzsmc@naver.com</p>
+                            <p>비즈니스닥터 : 권혁주</p>                            
+						</div>
+                        <br>
+						<p class="copyright">&copy;2025 All rights reserved.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="{% static 'js/jquery.min.js' %}"></script>
+			<script src="{% static 'js/jquery.scrolly.min.js' %}"></script>
+			<script src="{% static 'js/jquery.scrollex.min.js' %}"></script>
+			<script src="{% static 'js/browser.min.js' %}"></script>
+			<script src="{% static 'js/breakpoints.min.js' %}"></script>
+			<script src="{% static 'js/util.js' %}"></script>
+			<script src="{% static 'js/main.js' %}"></script>
+
+
+
+        <!-- end scroll progress -->
+        <!-- javascript libraries -->
+        <!-- <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/vendors.min.js' %}"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCA56KqSJ11nQUw_tXgXyNMiPmQeM7EaSA&callback=initMap"></script>
+        <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+        <script> -->
+  
+<script>
+// 개인정보관련js   
+var myagree = document.getElementById("agree");
+var mybutton = document.getElementById("submit");
+
+function myFunction() {
+
+    var elmnt = document.getElementById("myDIV");
+    var x = elmnt.scrollLeft;
+    var y = elmnt.scrollTop;
+    document.getElementById ("demo").innerHTML = "Horizontally: " + x + "px<br>Vertically: " + y + "px";
+    
+    console.log(y);
+    
+    if (y == 567) {
+        
+        myagree.disabled = "";
+        mybutton.disabled = "";
+    }
+    
+}
+
+</script>
+<script>
+        const agreeContent = document.querySelector('#agree_content');
+        const myDiv = document.querySelector('#myDIV');
+
+        agreeContent.addEventListener('click', function() {
+            myDiv.classList.toggle('agree_active');
+        });
+    </script>
+    </body>
+</html>
