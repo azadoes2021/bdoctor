@@ -100,7 +100,7 @@ input[type="submit"].primary{
 		
 }
 #banner h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: normal;
 }
@@ -157,8 +157,15 @@ input[type="submit"].primary{
 	.mc {
 		display: none;
 	}
+	.dc {
+		display: block;
+	}
 @media (max-width:500px) {
-  
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: normal;
+}
     #rbbtn4 {    
     top: 50%;  
     right: -7%;
@@ -170,6 +177,14 @@ input[type="submit"].primary{
 	.mc {
 		display: block;
 	}
+	.dc {
+		display: none;
+	}
+	#formwrapper h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: normal;
+}
 }
 #rbbtn4 img {
     width: 6rem;
@@ -182,6 +197,8 @@ a {
     text-decoration: none;
   }
   a:visited {text-decoration: none;color: white;}
+
+	
 	</style>
 	<body class="is-preload">
 
@@ -269,7 +286,7 @@ a {
 									<img src="{% static 'images/d5.png' %}" style="border-radius:50%;width: 20rem;" alt="">									
 									<br>
 									<br>
-									<h3>사전적 단어로 기업의 경영 상태를 검토하여 불건전한 점을 발견하면 <br> 그 시정책을 세워 그대로 실시하도록 지도,조언하는 전문인</h3>
+									<h3>사전적 단어로 기업의 경영 상태를 검토하여 불건전한 점을 발견하면 <br class="dc"> 그 시정책을 세워 그대로 실시하도록 지도,조언하는 전문인</h3>
 								</div>
 							</section>
 							
@@ -279,7 +296,7 @@ a {
 							<section id="first" class="main special">
 								<div class="inner">
 									<header>
-										<h2>혹시 귀사도 이런 <span style="color: red;">증상</span>을 겪고 있나요?</h2>
+										<h2>혹시 귀사도 이런 <span style="color: red;">증상</span> 겪고 있나요?</h2>
 									</header>
 									<div class="features">
 										<section>
@@ -337,7 +354,7 @@ a {
 										<header>
 											<h3>2. 정밀 진단</h3>
 										</header>
-										<p>데이터 분석과 현장 조사를 통해 기업의 건강 상태를 객관적으로 평가합니다.</p>
+										<p>데이터 분석과 현장 조사를 통해 기업의 <br class="mc"> 건강 상태를 객관적으로 평가합니다.</p>
 									</div>
 									<!--
 										Note: You can replace the image below with a JPEG or PNG. Just make sure it's exactly
@@ -355,7 +372,7 @@ a {
 										<header>
 											<h3>3. 맞춤형 처방</h3>
 										</header>
-										<p>기업의 상황과 목표에 맞는 실행 가능한 해결책을 제시합니다.</p>
+										<p>기업의 상황과 목표에 맞는 실행 가능한 <br class="mc"> 해결책을 제시합니다.</p>
 									</div>
 									<!--
 										Note: You can replace the image below with a JPEG or PNG. Just make sure it's exactly
@@ -373,7 +390,7 @@ a {
 										<header>
 											<h3>4. 치료 및 모니터링</h3>
 										</header>
-										<p>해결책 실행을 지원하고 성과를 지속적으로 추적하여 필요시 조정합니다</p>
+										<p>해결책 실행 지원과 성과를 지속적으로 <br class="mc"> 추적하여 필요시 조정합니다</p>
 									</div>
 									<!--
 										Note: You can replace the image below with a JPEG or PNG. Just make sure it's exactly
@@ -385,8 +402,44 @@ a {
 								</div>
 							</section>
 
+							<div id="wrapper">					
+															
+							<section id="first" class="main special">
+								<div class="inner">
+									<header>
+										<h2><span style="color: #45a6ee;">성공사례</span></h2>	
+									</header>
+									<div class="features">
+										<section>
+											
+											<span class="icon major"><i class="ri-gift-line" style="font-size: 3rem;color: #45a6ee;"></i></span>
+											
+											<h3>2008년 <br> 판촉물 업체</h3>
+											<p>성과: 월 매출 억대 돌파, <br> 사무실 4배 확장, 인력 충원</p>
+										</section>
+										<section>
+											<span class="icon solid major"><i class="ri-customer-service-2-line" style="font-size: 3rem;color: #45a6ee;"></i></span>
+											<h3>2010년 <br> 인터넷 보험</h3>
+											<p>성과: 월 매출 억대 달성, <br> 콜센터 인력 3배 증원, 사옥 확장</p>
+										</section>
+										<section>
+											<span class="icon solid major"><i class="ri-store-2-line" style="font-size: 3rem;color: #45a6ee;"></i></span>
+											<h3>2011년 <br> 프랜차이즈 주점</h3>
+											<p>성과: 월 문의 1건~2건 <br> → 전국 가맹점 100호점 돌파</p>
+										</section>
+										<section>
+											<span class="icon major"><i class="ri-coins-line" style="font-size: 3rem;color: #45a6ee;"></i></span>
+											<h3>2012년 <br> 금융/대출</h3>
+											<p>성과: 직원 수 4명 → 20명 <br> (5배 증가),  사무실 4배 확장</p>
+										</section>										
+										<h2 style="color: red;padding:2.5rem 0">여성의류쇼핑몰 6개월만에 일매출 800만원 -> 7000만원 신화 </h2>
+									</div>
+								</div>
+							</section>	
+							</div>
 
-							<section style="text-align: center;padding: 20rem 5rem 5rem 5rem;">
+
+							<!-- <section style="text-align: center;padding: 20rem 5rem 5rem 5rem;">
 
 								<img style="width: 80rem;" src="{% static 'images/pics000.png' %}" alt="">
 							</section>
@@ -394,7 +447,7 @@ a {
 							<section style="text-align: center;padding: 0rem 5rem;">
 
 								<img style="width: 80rem;" src="{% static 'images/pics.png' %}" alt="">
-							</section>
+							</section> -->
 
 							<!-- <div id="wrapper">
 							
@@ -510,7 +563,7 @@ a {
 					</div>
 					<div id="formwrapper">
 					<!-- Form -->
-						<h2 style="text-align: center;">더 늦기 전에, <br class="mc" > 지금 바로 <br> <span style="color: #45a6ee;">비즈니스 건강검진</span>을 받아보세요.</h2>
+						<h2 style="text-align: center;">더 늦기 전에,<br class="mc"> 지금 바로 <br> <span style="color: #45a6ee;">비즈니스 건강검진</span>을 <br class="mc"> 받아보세요.</h2>
 						<h3 style="text-align: center;">간단한 정보만 남겨주시면, 제가 직접 연락드려 <br> 1차 무료진단을 <br class="mc"> 도와드립니다.</h3>
 						<h2 style="text-align: center;"><span style="color: red;">매출 변화 없을시 100% <br class="mc"> 환불해드립니다.</span></h2>
 						<br>
