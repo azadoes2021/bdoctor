@@ -27,9 +27,7 @@ class CollectingdbForm(forms.Form):
         max_length=64, label='전화번호'
     )
     address001 = forms.CharField(
-        error_messages={
-            'required': '이름 또는 상호를 입력해주세요.'
-        },
+        required=False,
         max_length=100, label='이름(상호)'
     )
     # address002 = forms.CharField(
